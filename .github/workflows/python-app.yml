@@ -27,7 +27,7 @@ jobs:
       uses: actions/checkout@master
       with:
         repository: RaphaelHyde/workflow_1
-        ref: master
+        ref: main
     - name: validate files
       run: |
         python tools/main.py
