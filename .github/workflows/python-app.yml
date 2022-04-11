@@ -15,6 +15,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      with:
+        repository: RaphaelHyde/workflow_2
+        path: ./
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
@@ -27,6 +30,7 @@ jobs:
       uses: actions/checkout@master
       with:
         repository: RaphaelHyde/workflow_1
+        path: ./
         ref: main
     - name: validate files
       run: |
