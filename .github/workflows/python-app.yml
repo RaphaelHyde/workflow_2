@@ -38,4 +38,7 @@ jobs:
         ref: main
     - name: validate files
       run: |
+        ls
+        cd ..
+        ls
         python /tools/main.py
