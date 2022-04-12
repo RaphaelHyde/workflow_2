@@ -14,7 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout current pr
+      uses: actions/checkout@v3
+      with:
+        repository: RaphaelHyde/workflow_2
+        path: ./model
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
@@ -23,11 +27,15 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        ls
+        cd .. 
+        ls
     - name: clone tools
-      uses: actions/checkout@master
+      uses: actions/checkout@v3
       with:
         repository: RaphaelHyde/workflow_1
-        ref: master
+        path: ./tools
+        ref: main
     - name: validate files
       run: |
-        python tools/main.py
+        python tools/tools/main.py
