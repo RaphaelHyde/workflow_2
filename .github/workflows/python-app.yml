@@ -41,7 +41,7 @@ jobs:
         python tools/main.py
     - name: folder structure
       run: |
-        pwd ls
-        cd workflow_2
+        pwd 
         ls
+        
         
