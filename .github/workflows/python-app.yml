@@ -34,7 +34,7 @@ jobs:
       uses: actions/checkout@v3
       with:
         repository: RaphaelHyde/workflow_1
-        path: ./root/tools
+        path: ./root/tool
         ref: main
     - name: validate files
       run: |
