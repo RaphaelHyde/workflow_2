@@ -38,4 +38,6 @@ jobs:
         ref: main
     - name: validate files
       run: |
+        pwd
+        ls
         python tools/main.py
