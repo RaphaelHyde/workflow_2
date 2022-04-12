@@ -42,7 +42,5 @@ jobs:
     - name: folder1
       run: |
         ls
-        cd ..
-        cd ..
         cd model 
         cd folder1
