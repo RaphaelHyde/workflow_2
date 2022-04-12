@@ -34,14 +34,22 @@ jobs:
       uses: actions/checkout@v3
       with:
         repository: RaphaelHyde/workflow_1
-        path: ./
+        path: ./tools
         ref: main
     - name: validate files
       run: |
-        python tools/main.py
+        python tools/tools/main.py
     - name: folder structure
       run: |
         pwd 
+        ls
+        cd tools 
+        ls
+        cd tools
+        ls
+        cd .. 
+        cd ..
+        cd model
         ls
         
         
