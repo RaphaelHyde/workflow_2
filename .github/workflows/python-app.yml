@@ -42,7 +42,6 @@ jobs:
     - name: folder structure
       run: |
         pwd ls
-        cd .. 
+        cd workflow_2
         ls
-        cd .. 
-        ls
+        
