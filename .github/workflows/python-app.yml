@@ -40,4 +40,6 @@ jobs:
       run: |
         pwd
         ls
-        python tools/main.py
+        cd tools
+        ls
+        python main.py
