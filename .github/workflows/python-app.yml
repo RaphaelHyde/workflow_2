@@ -39,4 +39,10 @@ jobs:
     - name: validate files
       run: |
         python tools/tools/main.py
-        
+    - name: folder1
+      run: |
+        ls
+        cd ..
+        cd ..
+        cd model 
+        cd folder1
